@@ -1,6 +1,21 @@
+import "./style.css";
 import { getWeather } from "./weatherService";
 import { processWeather } from "./weatherAdapter";
+import { getLocation, showWeather } from "./domService";
 
-const data = await getWeather('Indonesia');
-const weather = processWeather(data);
-console.log(weather);
+const form = document.querySelector("form");
+let location;
+let data;
+let weather;
+form.addEventListener("submit", async (e) => {
+  try {
+    e.preventDefault();
+    location = getLocation();
+    data = await getWeather(location);
+    weather = processWeather(data);
+    showWeather(weather);
+    console.log(weather);
+  } catch (error) {
+    console.error(error);
+  }
+});
