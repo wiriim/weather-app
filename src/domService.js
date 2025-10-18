@@ -8,6 +8,7 @@ let temp = document.querySelector("#temp");
 let timezone = document.querySelector("#timezone");
 let description = document.querySelector("#description");
 let gif = document.querySelector("#gif");
+let loading = document.querySelector('.loading');
 
 function getLocation() {
   return location.value;
@@ -28,4 +29,12 @@ function showGif(url) {
   gif.src = url;
 }
 
-export { getLocation, showWeather, showGif };
+function showLoading(){
+  loading.classList.add('active');
+}
+
+function hideLoading(){
+  loading.classList.remove('active');
+}
+
+export { getLocation, showWeather, showGif, showLoading, hideLoading };

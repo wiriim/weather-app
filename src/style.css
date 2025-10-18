@@ -68,3 +68,17 @@ input:disabled {
 #description {
   margin-top: 1rem;
 }
+
+.loading{
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    opacity: 0.5;
+    top: 0;
+    text-align: center;
+}
+.loading.active{
+    display: block;
+}   
