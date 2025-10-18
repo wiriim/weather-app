@@ -1,48 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>What's The Weather?</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container form">
-        <h1>What's The Weather?</h1>
-        <form>
-            <label for="location">Location</label>
-            <input type="text" id="location" required>
-            <button>Search</button>
-        </form>
+      <h1>What's The Weather?</h1>
+      <form>
+        <label for="location">Location</label>
+        <input type="text" id="location" required />
+        <button>Search</button>
+      </form>
     </div>
     <div class="container data">
-        <p>
-            <label for="address">Address:</label>
-            <input type="text" id="address" disabled>
-        </p>
-        <p>
-            <label for="resolvedAddress">Resolved Address:</label>
-            <input type="text" id="resolvedAddress" disabled>
-        </p>
-        <p>
-            <label for="condition">Condition:</label>
-            <input type="text" id="condition" disabled>
-        </p>
-        <p>
-            <label for="sunrise">Sunrise:</label>
-            <input type="text" id="sunrise" disabled>
-        </p>
-        <p>
-            <label for="sunset">Sunset:</label>
-            <input type="text" id="sunset" disabled>
-        </p>
-        <p>
-            <label for="temp">Temperature:</label>
-            <input type="text" id="temp" disabled>
-        </p>
-        <p>
-            <label for="timezone">Timezone:</label>
-            <input type="text" id="timezone" disabled>
-        </p>        
+      <div id="descriptionDiv">
+        <label for="description">Description:</label>
+        <div id="description"></div>
+      </div>
+      <p>
+        <label for="address">Address:</label>
+        <input type="text" id="address" disabled />
+      </p>
+      <p>
+        <label for="resolvedAddress">Resolved Address:</label>
+        <input type="text" id="resolvedAddress" disabled />
+      </p>
+      <p>
+        <label for="condition">Condition:</label>
+        <input type="text" id="condition" disabled />
+      </p>
+      <p>
+        <label for="sunrise">Sunrise:</label>
+        <input type="text" id="sunrise" disabled />
+      </p>
+      <p>
+        <label for="sunset">Sunset:</label>
+        <input type="text" id="sunset" disabled />
+      </p>
+      <p>
+        <label for="temp">Temperature:</label>
+        <input type="text" id="temp" disabled />
+      </p>
+      <p>
+        <label for="timezone">Timezone:</label>
+        <input type="text" id="timezone" disabled />
+      </p>
     </div>
-</body>
+    <div class="container gif">
+      <img src="#" alt="" id="gif" />
+    </div>
+  </body>
 </html>
